@@ -1,13 +1,13 @@
 <div align="center">
 
 <h1>SuperCLIP</h1>
-**Weiheng Zhao**<sup>1</sup> · **Zilong Huang**<sup>2</sup> · **Xinggang Wang**<sup>1</sup> · **Jiashi Feng**<sup>2</sup>
 
-[![Paper](https://img.shields.io/badge/Paper-OpenReview-blue)](https://openreview.net/pdf?id=EeIEvZlmVg)
+<b>Weiheng Zhao</b><sup>1</sup> · <b>Zilong Huang</b><sup>2</sup> · <b>Xinggang Wang</b><sup>1</sup> · <b>Jiashi Feng</b><sup>2</sup>
 
-<sup>1</sup>HUST Vision Lab · <sup>2</sup>Bytedance
+HUST Vision Lab<sup>1</sup> & Bytedance<sup>2</sup>
 
-<p>Official codebase for SuperCLIP.</p>
+<a href="https://openreview.net/pdf?id=EeIEvZlmVg"><img src='https://img.shields.io/badge/Paper-OpenReview-blue' alt='Paper PDF'></a>
+
 
 </div>
 
