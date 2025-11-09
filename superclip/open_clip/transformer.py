@@ -1,9 +1,3 @@
-# --------------------------------------------------------
-# This file may have been modified by Bytedance Ltd. and/or its affiliates (“Bytedance's Modifications”). 
-# All Bytedance's Modifications are Copyright (2024) Bytedance Ltd. and/or its affiliates. 
-# SuperClass Project
-# Modified by Zilong Huang
-# --------------------------------------------------------
 from collections import OrderedDict
 import math
 from typing import Callable, Optional, Sequence, Tuple
