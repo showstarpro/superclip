@@ -1,6 +1,12 @@
 <div align="center">
 
 <h1>SuperCLIP</h1>
+**Weiheng Zhao**<sup>1</sup> · **Zilong Huang**<sup>2</sup> · **Xinggang Wang**<sup>1</sup> · **Jiashi Feng**<sup>2</sup>
+
+[![Paper](https://img.shields.io/badge/Paper-OpenReview-blue)](https://openreview.net/pdf?id=EeIEvZlmVg)
+
+<sup>1</sup>HUST Vision Lab · <sup>2</sup>Bytedance
+
 <p>Official codebase for SuperCLIP.</p>
 
 </div>
