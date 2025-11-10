@@ -11,6 +11,13 @@ HUST Vision Lab<sup>1</sup> & Bytedance<sup>2</sup>
 
 </div>
 
+The reason you should try SuperCLIP:
+It offers significant gains with only a **0.077 % increase in FLOPs** and **no extra annotated data** needed. It dramatically alleviates the performance drop of CLIP-style models under **small-batch training**, and it is fully compatible with modern CLIP variants (e.g., SigLIP, FLIP) while also delivering clear improvements when integrated into multi-modal LLM frameworks like LLaVA.
+
+<div align="center">
+  <img src="assets/teaser.png" alt="teaser" style="height: 350px; width: auto;">
+</div>
+
 ---
 
 ## Table of Contents
