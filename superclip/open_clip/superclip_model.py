@@ -268,9 +268,9 @@ class SuperCLIP(nn.Module):
         self.register_buffer("num_samples", torch.zeros([1, 1], dtype=torch.float64))
 
     # cls_avgpool
-    def _avg_pool(self, x: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
-        pooled, tokens = x[:, 1:].mean(dim=1), x[:, 1:]
-        return pooled
+    def _avg_pool(self, x: torch.Tensor) -> torch.Tensor:
+        # x is already patch tokens (without CLS token) from VisionTransformer
+        return x.mean(dim=1)
 
     def lock_image_tower(self, unlocked_groups=0, freeze_bn_stats=False):
         # lock image tower as per LiT - https://arxiv.org/abs/2111.07991
