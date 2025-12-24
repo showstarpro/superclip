@@ -26,9 +26,9 @@ imagenet_val: "/lpai/dataset/imagenet-1k/0-1-0/ILSVRC2012/val" # please modify t
 
 report_to: "wandb"
 log_every_n_steps: 128
-zeroshot_steps: 6104
-val_steps: 6104
-save_every_n_steps: 6104
+zeroshot_steps: 3438
+val_steps: 3438
+save_every_n_steps: 3438
 delete_prev_step_ckpt: true
 
 resume: latest
