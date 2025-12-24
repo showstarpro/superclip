@@ -12,7 +12,7 @@ lr: 3e-3
 beta1: 0.9
 beta2: 0.98
 eps: 1.0e-6
-workers: 1
+workers: 16
 model: "SuperCLIP-ViT-B-16"
 seed: 0
 ddp_static_graph: true

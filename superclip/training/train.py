@@ -395,7 +395,7 @@ def evaluate(model, data, epoch, args, tb_writer=None, tokenizer=None, step=None
         if 'train' in data:
             dataloader = data['train'].dataloader
             num_batches_per_epoch = dataloader.num_batches // args.accum_freq
-            step = num_batches_per_epoch * epoch
+            step = int(num_batches_per_epoch * epoch)
         else:
             step = None
         log_data['epoch'] = epoch
