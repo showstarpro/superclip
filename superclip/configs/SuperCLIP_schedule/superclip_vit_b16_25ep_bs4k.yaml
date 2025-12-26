@@ -1,0 +1,35 @@
+save_frequency: 1
+name: "superclip_vit_b16_25ep_bs4k"
+train_data: '/lpai/dataset/yfcc15m/0-1-6/yfcc15m_webdataset/0{0000..1410}.tar' # please modify to your own path
+train_num_samples: 14082031  # Total samples in YFCC15M dataset (1411 tar files)
+dataset_type: webdataset
+precision: 'amp_bfloat16'
+warmup: 3438
+global_batch_size: 4096
+batch_size: 0  # Will be calculated automatically: global_batch_size / world_size
+epochs: 30  # Train for 30 complete epochs over all 14082031 samples
+lr: 5e-4
+beta1: 0.9
+beta2: 0.98
+eps: 1.0e-8
+wd: 0.5
+workers: 16
+model: "SuperCLIP-ViT-B-16"
+seed: 0
+ddp_static_graph: true
+local_loss: true
+gather_with_grad: true
+force_image_size: 224
+grad_checkpointing: true
+
+logs: '/lpai/output/models/logs'
+imagenet_val: "/lpai/dataset/imagenet-1k/0-1-0/ILSVRC2012/val" # please modify to your own path
+
+report_to: "wandb"
+log_every_n_steps: 128
+zeroshot_steps: 3438
+val_steps: 3438
+save_every_n_steps: 3438
+delete_prev_step_ckpt: true
+
+resume: latest
