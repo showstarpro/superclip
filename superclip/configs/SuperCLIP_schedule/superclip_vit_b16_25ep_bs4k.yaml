@@ -7,7 +7,7 @@ precision: 'amp_bfloat16'
 warmup: 3438
 global_batch_size: 4096
 batch_size: 0  # Will be calculated automatically: global_batch_size / world_size
-epochs: 30  # Train for 30 complete epochs over all 14082031 samples
+epochs: 25  # Train for 25 complete epochs over all 14082031 samples
 lr: 5e-4
 beta1: 0.9
 beta2: 0.98
